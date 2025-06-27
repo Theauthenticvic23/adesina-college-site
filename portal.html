@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ACI Portal – Adesina College</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====== Header ====== -->
+  <header>
+    <a href="index.html" class="logo">Adesina College Ibadan</a>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <nav id="nav-links">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#academics">Academics</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="media.html">Media</a>
+      <a href="payment.html">Payment</a>
+      <a href="jobs.html">Apply Job</a>
+      <a href="foundation.html">Foundation</a>
+      <a href="portal.html" class="active">ACI Portal</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ====== Portal Section ====== -->
+  <section class="portal-section">
+    <div class="container">
+      <h2>ACI Online Portal</h2>
+      <p>Access our digital platform for academic records, payments, and student services.</p>
+      <a href="https://acionlineportal.com.ng/" class="btn" target="_blank">Visit Official Portal</a>
+    </div>
+  </section>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <p>&copy; 2025 Adesina College Ibadan. All rights reserved.</p>
+    <p>Designed by <strong>Victor Adesina</strong></p>
+  </footer>
+
+  <!-- ====== Script for Toggle Menu (optional) ====== -->
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("nav-links");
+      nav.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>

@@ -400,39 +400,22 @@ nav a:hover {
 .bio-text p strong {
   color: #003366;
 }
-.map-box {
-  max-height: 0;
+/* Toggle map visibility */
+#mapBox {
+  transition: max-height 0.5s ease, opacity 0.5s ease;
   overflow: hidden;
-  transition: max-height 0.6s ease-in-out;
-}
-.map-box.show-map {
-  max-height: 400px; /* enough to show the iframe */
 }
 
-.map-box.hide-map {
+.show-map {
+  max-height: 500px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.hide-map {
   max-height: 0;
-}
-.map-box iframe {
-  width: 100%;
-  max-width: 600px;
-  height: 250px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 51, 102, 0.2);
-}
-.toggle-map-btn {
-  background-color: #0059b3;
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  font-size: 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  margin-top: 20px;
-  transition: background-color 0.3s;
-}
-
-.toggle-map-btn:hover {
-  background-color: #003366;
+  opacity: 0;
+  visibility: hidden;
 }
 
 /* ===== Footer Section ===== */
@@ -595,6 +578,65 @@ nav a:hover {
   font-size: 1rem;
   list-style-type: disc;
   padding-left: 20px;
+}
+.form-section {
+  padding: 80px 20px;
+  background: #eaf4ff;
+}
+.form-section .container {
+  max-width: 800px;
+  margin: auto;
+}
+.form-section h2 {
+  color: #003366;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.cta-buttons {
+  padding: 50px 20px;
+  background-color: #f4f9ff;
+  text-align: center;
+}
+
+.cta-buttons .btn {
+  margin: 10px;
+  padding: 12px 28px;
+  background-color: #003366;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+  background-color: #0059b3;
+}
+.portal-section {
+  padding: 80px 20px;
+  background-color: #f9f9ff;
+  text-align: center;
+}
+.portal-section h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 20px;
+}
+.portal-section p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 30px;
+}
+.portal-section .btn {
+  background-color: #003366;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.portal-section .btn:hover {
+  background-color: #0059b3;
 }
 
 /* ===== Split Section (Two Columns) ===== */
